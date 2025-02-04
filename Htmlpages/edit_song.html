@@ -1,0 +1,17 @@
+<head>
+    <title>login</title>
+</head>
+<body>
+    <form method="post">
+        {%csrf_token%}
+        <label>name</label>
+        <input name="name" value="{{one_song.name}}">
+        <label>artist</label>
+        <input name="artist" value="{{one_song.artist}}">
+        <label>listeners</label>
+        <input name="listeners" value="{{one_song.listeners}}" type="number">
+        <label>lyrics</label>
+        <textarea name="lyrics">{{one_song.lyrics}}</textarea>
+        <button>save</button>
+    </form>
+</body>

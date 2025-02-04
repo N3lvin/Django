@@ -1,0 +1,15 @@
+<head>
+    <title>login</title>
+</head>
+<body>
+    <form method="post">
+        {%csrf_token%}
+        <label>team</label>
+        <input name="team">
+        <label>wins</label>
+        <input name="wins" type="number">
+        <label>draws</label>
+        <input name="draws" type="number">
+        <button>save</button>
+    </form>
+</body>

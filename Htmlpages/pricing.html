@@ -1,0 +1,16 @@
+<head>
+    <title>pricing</title>
+
+</head>
+<body>
+    <h1>subscription fee @ {{myprice}}</h1>
+    <p>Payment via credit card</p>
+    <form method="post">
+        {%csrf_token%}
+        <label>name</label>
+        <input name="firstname">
+        <label>number</label>
+        <input name="number">
+        <button>send</button>
+    </form>
+</body>

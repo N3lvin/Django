@@ -1,0 +1,16 @@
+<head>
+    <title>edit_user</title>
+</head>
+<body>
+    <form method="post">
+        {%csrf_token%}
+        <label>username</label>
+        <input name="username" value="{{one_user.username}}">
+        <label>Email</label>
+        <input name="Email" value="{{one_user.email}}">
+        <label>password</label>
+        <input name="password" value="{{one_user.password}}">
+        <button>Edit</button>
+        
+    </form>
+</body>
